@@ -1,0 +1,1 @@
+Horizontal row of text-only credential badges/awards. Each row is one credential item with text content only (no images).

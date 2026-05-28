@@ -1,0 +1,1 @@
+Expandable accordion with industry items. Each row has 2 columns: title (summary) and body content (description, image, CTA).

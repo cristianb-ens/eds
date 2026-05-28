@@ -1,0 +1,1 @@
+Two-column split layout with image on one side and text content (eyebrow, heading, paragraph, CTAs) on the other.
