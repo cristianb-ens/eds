@@ -1,0 +1,314 @@
+{
+  "url": "https://kaufmanrossin.com/",
+  "analysisDate": "2026-05-28",
+  "variantMapping": {
+    "hero (section 1)": "hero-homepage",
+    "cards (section 1, seq 2)": "cards-credentials",
+    "cards (section 2)": "cards-featured",
+    "accordion (section 3)": "accordion-industries",
+    "hero (section 4)": "hero-video",
+    "columns (section 5)": "columns-split",
+    "columns (section 6)": "columns-split",
+    "quote (section 7)": "quote-testimonial",
+    "cards (section 8)": "cards-featured",
+    "cards (section 9)": "cards-locations"
+  },
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "name": "Hero",
+      "style": "dark",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Full-width background image with overlay, large centered heading, descriptive paragraph, and two call-to-action buttons",
+          "decision": "block",
+          "blockName": "hero-homepage",
+          "blockVariant": "hero-homepage",
+          "reason": "Full-width banner with background image, heading, text, and CTAs is a classic hero pattern. Cannot be authored as simple default content due to image overlay and structured layout.",
+          "contentSummary": {
+            "heading": "Independence is a choice.",
+            "text": "As the professional services industry consolidates and outside capital reshapes priorities, Kaufman Rossin is choosing a different path...",
+            "ctas": ["Explore Our Services", "Meet Our Team"],
+            "backgroundImage": true
+          }
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Horizontal credentials/awards bar with label and 4 recognition badges",
+          "decision": "block",
+          "blockName": "cards-credentials",
+          "blockVariant": "cards-credentials",
+          "reason": "Repeating structured pattern of awards/badges in a horizontal row requires block structure. Grid of uniform items with consistent styling matches cards pattern.",
+          "contentSummary": {
+            "label": "RECOGNIZED FOR EXCELLENCE",
+            "items": ["Best Place to Work", "Top 50 U.S. Firm", "2026 Regional Leader", "2026 Best of Accounting Award"]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "name": "News Cards",
+      "style": "light",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Grid of 3 cards with label/tag, large background image, and hover-revealed content (description + CTA)",
+          "decision": "block",
+          "blockName": "cards-featured",
+          "blockVariant": "cards-featured",
+          "reason": "Repeating structured pattern of items with images, text, and CTAs in a grid layout. Obvious match with cards block.",
+          "contentSummary": {
+            "cardCount": 3,
+            "structure": "image + label + description + CTA per card",
+            "links": ["/news/kaufman-rossin-elects-marc-feigelson-as-next-ceo/", "/news/kaufman-rossin-and-synack-partner/", "https://middlemarketai.com/"]
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "name": "Featured Industries",
+      "style": "light",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Section heading 'Featured Industries' followed by expandable accordion items with industry descriptions and right-side image panel",
+          "decision": "block",
+          "blockName": "accordion-industries",
+          "blockVariant": "accordion-industries",
+          "reason": "Interactive expandable/collapsible content sections (6 industry items) with click-to-expand behavior. Clear accordion pattern requiring JavaScript decoration.",
+          "contentSummary": {
+            "heading": "Featured Industries",
+            "itemCount": 6,
+            "items": ["Banking", "Manufacturing & Distribution", "Healthcare", "Real Estate", "Private Equity/Hedge Funds", "Private Clients"],
+            "eachItemHas": "title + description + CTA + image"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "name": "Video Banner",
+      "style": "full-width background image",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Content card with heading and description overlaying a full-width background image with centered play button for video",
+          "decision": "block",
+          "blockName": "hero-video",
+          "blockVariant": "hero-video",
+          "reason": "Full-width background image with text content overlay is a hero pattern. The play button for video is a secondary feature. The primary layout is hero-style (background image + overlaid text card).",
+          "contentSummary": {
+            "heading": "Our Independence in Action",
+            "text": "See how our independent model benefits our clients...",
+            "backgroundImage": true,
+            "hasVideo": true
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "name": "Services Split Content",
+      "style": "light",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: image on right, content on left (eyebrow, heading, paragraph, CTA button)",
+          "decision": "block",
+          "blockName": "columns-split",
+          "blockVariant": "columns-split",
+          "reason": "Side-by-side layout with image on one side and text content on the other requires structured columns. Cannot be authored as plain text.",
+          "contentSummary": {
+            "eyebrow": "Our Services",
+            "heading": "Comprehensive Solutions, Tailored for You",
+            "text": "From sophisticated tax strategies to proactive consulting...",
+            "ctas": ["View All Services"],
+            "imagePosition": "right"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "name": "About Split Content",
+      "style": "light",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout: image on left, content on right (eyebrow, heading, paragraph, 2 CTA buttons)",
+          "decision": "block",
+          "blockName": "columns-split",
+          "blockVariant": "columns-split",
+          "reason": "Side-by-side layout with image on one side and text content on the other. Same pattern as Section 5 but with image on left.",
+          "contentSummary": {
+            "eyebrow": "About KAUFMAN ROSSIN",
+            "heading": "A Legacy of Independence",
+            "text": "For more than 60 years, we have remained independent by choice...",
+            "ctas": ["Our History", "Meet the Team"],
+            "imagePosition": "left"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "name": "Quote/Testimonial",
+      "style": "dark blue",
+      "sectionMetadata": {
+        "style": "dark-blue"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large centered quote with attribution",
+          "decision": "block",
+          "blockName": "quote-testimonial",
+          "blockVariant": "quote-testimonial",
+          "reason": "Highlighted testimonial/quote with attribution is a clear match for the quote block. Requires specific styling and structure.",
+          "contentSummary": {
+            "quote": "Independence allows us to stay accountable to our clients and our people, not outside investors.",
+            "attribution": "Marc Feigelson, CEO-Elect of Kaufman Rossin"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 8,
+      "name": "Firm Family Cards",
+      "style": "light",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading followed by grid of 2 cards with labels, images, and hover-revealed content",
+          "decision": "block",
+          "blockName": "cards-featured",
+          "blockVariant": "cards-featured",
+          "reason": "Same repeating card pattern as Section 2 but with 2 items and a heading above. Structured grid items with images and CTAs require cards block.",
+          "contentSummary": {
+            "heading": "Get to Know Your Firm Family",
+            "cardCount": 2,
+            "items": ["Wealth Solutions", "Fund Administration"],
+            "structure": "image + label + description + CTA per card"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 9,
+      "name": "Locations",
+      "style": "light with top divider",
+      "sectionMetadata": null,
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Locations' followed by grid of 5 location items with circular images and location names",
+          "decision": "block",
+          "blockName": "cards-locations",
+          "blockVariant": "cards-locations",
+          "reason": "Repeating structured pattern of location items in a grid, each with image and text. Matches cards block pattern.",
+          "contentSummary": {
+            "heading": "Locations",
+            "itemCount": 5,
+            "items": ["Boca Raton", "Fort Lauderdale", "Miami", "New York", "Palm Beach Gardens"],
+            "structure": "circular image + name per item"
+          }
+        }
+      ]
+    },
+    {
+      "sectionNumber": 10,
+      "name": "Full-Width CTA",
+      "style": "grey",
+      "sectionMetadata": {
+        "style": "grey"
+      },
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading, descriptive paragraph, and CTA button",
+          "decision": "default-content",
+          "blockName": null,
+          "blockVariant": null,
+          "reason": "Author can type a heading, paragraph, and link normally. The grey background is handled by section-metadata styling. No block structure needed.",
+          "contentSummary": {
+            "heading": "Your next breakthrough starts here",
+            "text": "Move forward with clarity and confidence, backed by an independent partner that puts you first.",
+            "ctas": ["Contact Us"]
+          }
+        }
+      ]
+    }
+  ],
+  "sectionStylingValidation": {
+    "singleBlockSections": [
+      {
+        "sectionNumber": 1,
+        "block": "hero-homepage",
+        "background": "Full-width dark image overlay - hero's own background image",
+        "layout": "Edge-to-edge, no visible section padding",
+        "decision": "SKIP section-metadata",
+        "reason": "Background is hero's design (full-bleed image), not section container styling"
+      },
+      {
+        "sectionNumber": 4,
+        "block": "hero-video",
+        "background": "Full-width beach landscape photo - block's own background",
+        "layout": "Edge-to-edge, full-bleed image with overlaid card",
+        "decision": "SKIP section-metadata",
+        "reason": "Background image is the block's design element, not section container styling"
+      },
+      {
+        "sectionNumber": 7,
+        "block": "quote-testimonial",
+        "background": "Solid dark blue color with visible section padding",
+        "layout": "Content centered with visible padding on sides",
+        "decision": "KEEP section-metadata style='dark-blue'",
+        "reason": "Section provides container styling (solid color background with padding) for the quote block. Quote block typically inherits section styling."
+      }
+    ]
+  },
+  "blockStructures": {
+    "hero-homepage": {
+      "structure": "1 column, 3 rows: [block name] | [background image] | [heading + text + CTAs]",
+      "notes": "Row 2 = image, Row 3 = text content with heading, paragraph, and links"
+    },
+    "hero-video": {
+      "structure": "1 column, 3 rows: [block name] | [background image] | [heading + text]",
+      "notes": "Row 2 = background image (beach), Row 3 = heading + description text"
+    },
+    "cards-featured": {
+      "structure": "2 columns, multiple rows: [block name] | [image | text content per row]",
+      "notes": "Each card = 1 row with image in col 1, text (heading + description + CTA) in col 2"
+    },
+    "cards-credentials": {
+      "structure": "1 column, multiple rows: [block name] | [text per row]",
+      "notes": "Each credential = 1 row with text-only content (no images variant)"
+    },
+    "cards-locations": {
+      "structure": "2 columns, multiple rows: [block name] | [image | location name per row]",
+      "notes": "Each location = 1 row with circular image in col 1, name in col 2"
+    },
+    "accordion-industries": {
+      "structure": "2 columns, multiple rows: [block name] | [title | content per row]",
+      "notes": "Each accordion item = 1 row with title in col 1, body content (description + image + CTA) in col 2"
+    },
+    "columns-split": {
+      "structure": "2 columns, 2 rows: [block name] | [image | content]",
+      "notes": "Each cell becomes a column. Image on one side, content (eyebrow + heading + text + CTAs) on other."
+    },
+    "quote-testimonial": {
+      "structure": "1 column, 3 rows: [block name] | [quote text] | [attribution]",
+      "notes": "Row 2 = quote paragraph, Row 3 = attribution text"
+    }
+  }
+}

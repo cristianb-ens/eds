@@ -1,0 +1,85 @@
+{
+  "url": "https://kaufmanrossin.com/",
+  "timestamp": "2026-05-28T10:30:53.667Z",
+  "paths": {
+    "documentPath": "/index",
+    "htmlFilePath": "/index.plain.html",
+    "mdFilePath": "/index.md",
+    "dirPath": "",
+    "filename": "index"
+  },
+  "screenshot": "migration-work/screenshot.png",
+  "html": {
+    "filePath": "migration-work/cleaned.html",
+    "size": 2225619
+  },
+  "metadata": {
+    "title": "Home",
+    "viewport": "width=device-width, minimum-scale=1.0",
+    "og:site_name": "Kaufman Rossin Multisite Website",
+    "description": "Independent by choice, Kaufman Rossin delivers tax, audit, and advisory services that support long-term success, reduce risk, and help organizations grow.",
+    "og:locale": "en_US",
+    "og:type": "article",
+    "og:title": "Kaufman Rossin | CPA Firm I Tax, Audit, Advisory Services",
+    "og:description": "Independent by choice, Kaufman Rossin delivers tax, audit, and advisory services that support long-term success, reduce risk, and help organizations grow.",
+    "og:url": "https://kaufmanrossin.com/",
+    "article:modified_time": "2026-05-15T19:24:20+00:00",
+    "twitter:card": "summary_large_image",
+    "robots": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://www.kaufmanrossin.com/#organization",
+          "name": "Kaufman Rossin",
+          "url": "https://www.kaufmanrossin.com/",
+          "logo": "https://storage.googleapis.com/kaufman/1/2022/01/KR_Logo.svg",
+          "description": "Kaufman Rossin is an independent advisory, tax, audit, and consulting firm focused on helping organizations grow, manage risk, and achieve long-term success.",
+          "sameAs": [
+            "https://www.linkedin.com/company/kaufman-rossin/",
+            "https://twitter.com/kaufmanrossin",
+            "https://www.facebook.com/kaufmanrossin"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://www.kaufmanrossin.com/#website",
+          "url": "https://www.kaufmanrossin.com/",
+          "name": "Kaufman Rossin",
+          "publisher": {
+            "@id": "https://www.kaufmanrossin.com/#organization"
+          }
+        }
+      ]
+    }
+  },
+  "images": {
+    "count": 15,
+    "mapping": {
+      "https://storage.googleapis.com/kaufman/1/2022/01/KR_Logo.svg": "./images/a39b307de08a586caab6415cd85ca079.png",
+      "https://storage.googleapis.com/kaufman/1/2026/05/iStock-2254861503-e1778870453933.jpg": "./images/69d4b9ab4bbac3da4d248c0a9a34a63c.jpg",
+      "https://storage.googleapis.com/kaufman/1/2022/01/KR_Logo-Footer.svg": "./images/f61cc8947067bc725cbe4b28e93a04ce.png",
+      "https://storage.googleapis.com/kaufman/1/2026/04/image-1.png": "./images/874a47699b105a81f2c419d4c7acdb07.png",
+      "https://i.liadm.com/s/67724?bidder_id=193691&bidder_uuid=na": "./images/a8de5289e340cea656d4b139a37956d9.png",
+      "https://segments.company-target.com/validateCookie?vendor=sharethis&user_id=na&verifyHash=b80b6314aa0354973dd75ef7a643eedd193591ba": "./images/c5c370ad3cf15f2f2eafa90d3dc66a50.png",
+      "https://www.gstatic.com/recaptcha/api2/logo_48.png": "./images/496447750afe5fc4d1cb30eaaccc68f4.png",
+      "https://sync.sharethis.com/openx?uid=8344432a-173b-4410-beab-8b5e9684233d": "./images/14f67ce5f0c94907443e6b2086ff90c3.png",
+      "https://adservice.google.com/ddm/fls/z/dc_pre=CJLuncPj25QDFVngzgAdptcPTw;src=14859701;type=invmedia;cat=kaufm00;rcb=15;ord=3084443388715;npa=0;auiddc=*;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe65r0h2v9195061705z86180657za20gzb6180657zd6180657xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=0~115938465~115938468~116701381~119169248;epver=2;dc_random=1779964242_1Ljc2WuQbiVNSH7fXnIavpEDxdeQ0htrgA;_dc_test=1;~oref=https%3A%2F%2Fkaufmanrossin.com%2F": "./images/7bb041ffa21819079edd506bc16ab811.png",
+      "https://adservice.google.com/ddm/fls/z/dc_pre=COKynsPj25QDFU_GzgAdAxcEbw;src=14859701;type=invmedia;cat=kaufm003;rcb=15;ord=118435972225;npa=0;auiddc=*;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe65r0h2v9195061705z86180657za20gzb6180657zd6180657xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=0~115938465~115938468~116701381~119169248;epver=2;dc_random=1779964242_G6j50gn9tFu__ELLgYwv-tBJafqoMfRecQ;_dc_test=1;~oref=https%3A%2F%2Fkaufmanrossin.com%2F": "./images/3e4c044b75d2c642a76daeb9c2586ef6.png",
+      "https://www.google.com/pagead/1p-user-list/17654263825/?random=1779964242391&cv=11&fst=1779962400000&bg=ffffff&guid=ON&async=1&en=gtag.config&gtm=45be65r0h2v9232489967z86180657za20gzb6180657zd6180657xec&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115616986~115938465~115938469~116701381~118228215~119034491~119169248&u_w=1280&u_h=720&url=https%3A%2F%2Fkaufmanrossin.com%2F&rcb=13&frm=0&tiba=Kaufman%20Rossin%20%7C%20CPA%20Firm%20I%20Tax%2C%20Audit%2C%20Advisory%20Services&hn=www.googleadservices.com&npa=0&pscdl=noapi&auid=367588160.1779964242&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&data=event%3Dgtag.config&rfmt=3&fmt=3&is_vtc=1&cid=CAQS1AEABaugfW16oqkhvvcKZXkrCmCTC8SjB1SMw1aPSYA5ycLkgIVlGg_d2XgWYJWGfliBLlxX-C8P1OwvuLufcgmoNjpHcYaHAP1AqEVozG5kZV3J2l1XKy5yGxCYh7yZl_6G2Sb7zk_9oMXfdlY9dA1s_Z6GaBOs30esr1VkNfw1aTD_SypPSuJG2oogRw05wF3J564oK6N0M5aUmnT5DMM75h0FqLZEetwihQ-hq9M0Q2famXf7G2tPtOcx2JCNoa-Vjry-2hEVM-IkQCMlJ064VwMNZg&random=3604634243&rmt_tld=0&ipr=y": "./images/6675ca1d61497ae853c5ba8868c6fc82.png",
+      "https://adservice.google.com/ddm/fls/z/dc_pre=CJuPxsPj25QDFewuiAkdPNcaag;src=16302738;type=invmedia;cat=retar00;rcb=8;ord=1823036240815;npa=0;auiddc=*;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe65r0h2v9241629055z86180657za20gzb6180657zd6180657xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=0~115938465~115938468~116701381~119169248;epver=2;dc_random=1779964243_RW1sWJhjTAoKgEQO9vB39yJun7clS6l8RQ;_dc_test=1;~oref=https%3A%2F%2Fkaufmanrossin.com%2F": "./images/c94280ae99ebaa0cb44cb72c295ad9b2.png",
+      "https://adservice.google.com/ddm/fls/z/dc_pre=CIbRxsPj25QDFSYtiAkdRck53w;src=16302738;type=invmedia;cat=retar0;rcb=8;ord=412856053435;npa=0;auiddc=*;uaa=x86;uab=64;uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6;uamb=0;uam=;uap=Linux;uapv=;uaw=0;pscdl=noapi;frm=0;_tu=KFA;gtm=45fe65r0h2v9241629055z86180657za20gzb6180657zd6180657xea;gcd=13l3l3l3l1l1;dma=0;dc_fmt=2;tag_exp=0~115938465~115938468~116701381~119169248;epver=2;dc_random=1779964243_SnK8pil1Es5Ysgwyl_389SBYhp59K6b5Tg;_dc_test=1;~oref=https%3A%2F%2Fkaufmanrossin.com%2F": "./images/f6ee21c96bf9cb38b3265d3740b73bc0.png",
+      "https://www.google.com/pagead/1p-user-list/1052340293/?random=1779964243214&cv=11&fst=1779962400000&bg=ffffff&guid=ON&async=1&gtm=45be65r0h2z86180657za20gzb6180657zd6180657xea&gcd=13l3l3l3l1l1&dma=0&tag_exp=0~115938465~115938468~116701381~118228215~119169248&u_w=1280&u_h=720&url=https%3A%2F%2Fkaufmanrossin.com%2F&rcb=17&label=kPkKCOfSrQQQxeDl9QM&frm=0&tiba=Kaufman%20Rossin%20%7C%20CPA%20Firm%20I%20Tax%2C%20Audit%2C%20Advisory%20Services&hn=www.googleadservices.com&npa=0&us_privacy=1---&pscdl=noapi&auid=367588160.1779964242&uaa=x86&uab=64&uafvl=Not%253AA-Brand%3B99.0.0.0%7CHeadlessChrome%3B145.0.7632.6%7CChromium%3B145.0.7632.6&uamb=0&uam=&uap=Linux&uapv=&uaw=0&_tu=CA&data=section%3D%3Bindustry%3D&rfmt=3&fmt=3&is_vtc=1&cid=CAQS4gEABaugfXr4Cgr7umM6N8lbAL6tQQaJYZx-jJuy6daguATC7G2O46NurtYocc4r6Oz5KI1XmP_FIEPIaZcX0inemwPojWAzZyRMcaOxtE3UYJ8qLfQJy1MCiCu4eGO0LtrUQ2w8Me5T86RfoAWVqjdJhY_slJhpb6ag5LAGaR0kY-sGWD-HhKSEWmFB5HjmCCF4sTiHFuo4HT8q8w2JA_6aA7vacMNNROmbrYzYLbTuCBCa_PYigoBvktRgs4DUV4z5Jr0hJVIGPUG0IbD7VBWS5UpzYbnMbx0iY_3qr3B13GT6&random=1276146413&rmt_tld=0&ipr=y": "./images/9212c4a1b9404a7e624b73aa5a1e14de.png",
+      "https://storage.googleapis.com/kaufman/1/2025/05/https___tf-cmsv2-smithsonianmag-media.s3.amazonaws.com_filer_public_20_23_20237b39-b24e-438a-b220-2b8c2d2ac0d0_fort_lauderdale_beach_1.webp": "./images/808702fc1002277a49f4a6c60a1cdd97.png"
+    },
+    "stats": {
+      "total": 40,
+      "converted": 12,
+      "skipped": 3,
+      "failed": 25,
+      "tooLarge": 0,
+      "limitReached": 0
+    }
+  }
+}

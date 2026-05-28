@@ -1,0 +1,40 @@
+{
+  "variantName": "columns-split",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-05-28T10:34:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://kaufmanrossin.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "split-content",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image column + content column (eyebrow + heading + paragraph + CTAs)",
+    "buttonCount": 2,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "image + text split sections",
+      "service or feature highlight sections",
+      "about sections with photo and description",
+      "50/50 split layouts"
+    ],
+    "notSuitableFor": [
+      "multi-column text layouts",
+      "3+ column layouts",
+      "data comparison columns"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-28T10:34:00.000Z"
+  }
+}

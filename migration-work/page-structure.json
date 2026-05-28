@@ -1,0 +1,196 @@
+{
+  "url": "https://kaufmanrossin.com/",
+  "analysisDate": "2026-05-28",
+  "sections": [
+    {
+      "sectionNumber": 1,
+      "name": "Hero",
+      "style": "dark background with full-width image overlay",
+      "sourceSelector": ".sbc-hero-homepage-kr",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Full-width background image with overlay, large centered heading ('Independence is a choice.'), descriptive paragraph, and two call-to-action buttons ('Explore Our Services' and 'Meet Our Team')"
+        },
+        {
+          "sequenceNumber": 2,
+          "description": "Credentials/awards bar beneath the hero image - a horizontal row of recognition badges/labels: 'Best Place to Work', 'Top 50 U.S. Firm', '2026 Regional Leader', '2026 Best of Accounting Award'"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 2,
+      "name": "News Cards",
+      "style": "light/white background",
+      "sourceSelector": ".sbc-kr-family-cards:first-of-type",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Grid of 3 cards, each with a label/tag overlaying the top, a large background image, and hover-revealed content (description paragraph and CTA link). Cards link to: CEO announcement, Synack partnership, AI assessment."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 3,
+      "name": "Featured Industries",
+      "style": "light/white background",
+      "sourceSelector": ".sbc-industries-accordion-kr",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Section heading 'Featured Industries' followed by an accordion on the left with 6 expandable industry items (Banking, Manufacturing & Distribution, Healthcare, Real Estate, Private Equity/Hedge Funds, Private Clients) each containing a description paragraph and CTA button. On the right (desktop), a large image panel that changes based on selected accordion item."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 4,
+      "name": "Video Banner",
+      "style": "full-width background image (beach/landscape photo)",
+      "sourceSelector": ".sbc-video-banner-kr",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Content card overlay with heading 'Our Independence in Action' and description paragraph, positioned over a full-width background image (Fort Lauderdale beach) with a centered play button for video playback"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 5,
+      "name": "Services Split Content (Image Right)",
+      "style": "white background",
+      "sourceSelector": ".sbc-half-image-copy-kr--image-right",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout with image on the right (man and woman discussing on laptop) and content on the left: eyebrow text 'Our Services', heading 'Comprehensive Solutions, Tailored for You', descriptive paragraph, and CTA button 'View All Services'"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 6,
+      "name": "About Split Content (Image Left)",
+      "style": "white background",
+      "sourceSelector": ".sbc-half-image-copy-kr--image-left",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Two-column layout with image on the left (office exterior with Kaufman Rossin sign) and content on the right: eyebrow text 'About KAUFMAN ROSSIN', heading 'A Legacy of Independence', descriptive paragraph, and two CTA buttons ('Our History' and 'Meet the Team')"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 7,
+      "name": "Quote/Testimonial",
+      "style": "dark blue background (bg-color-blue)",
+      "sourceSelector": ".sbc-content-callout-quote",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Large centered quote text: 'Independence allows us to stay accountable to our clients and our people, not outside investors.' with attribution: 'Marc Feigelson, CEO-Elect of Kaufman Rossin', quote icon above"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 8,
+      "name": "Firm Family Cards",
+      "style": "light/white background",
+      "sourceSelector": ".sbc-kr-family-cards:last-of-type",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Get to Know Your Firm Family' followed by a grid of 2 cards, each with a label/tag, large background image, and hover-revealed description + CTA. Cards link to: Wealth Solutions (kaufmanrossinwealth.com) and Fund Administration (kaufmanrossinais.com)"
+        }
+      ]
+    },
+    {
+      "sectionNumber": 9,
+      "name": "Locations",
+      "style": "light/white background with top divider line",
+      "sourceSelector": ".sbc-locations-grid-kr",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Heading 'Locations' followed by a grid of 5 location items, each with a circular/rounded image and location name: Boca Raton, Fort Lauderdale, Miami, New York, Palm Beach Gardens. Each item links to its contact page."
+        }
+      ]
+    },
+    {
+      "sectionNumber": 10,
+      "name": "Full-Width CTA",
+      "style": "grey background (bg-gray)",
+      "sourceSelector": ".sbc-cta-fullwidth-kr",
+      "sequences": [
+        {
+          "sequenceNumber": 1,
+          "description": "Centered heading 'Your next breakthrough starts here', descriptive paragraph, and a single CTA button 'Contact Us'"
+        }
+      ]
+    }
+  ],
+  "blockInventory": {
+    "localBlocks": [
+      "accordion",
+      "cards",
+      "carousel",
+      "columns",
+      "embed",
+      "footer",
+      "form",
+      "fragment",
+      "header",
+      "hero",
+      "modal",
+      "quote",
+      "search",
+      "table",
+      "tabs",
+      "video"
+    ],
+    "blockCollectionAvailable": [
+      {
+        "name": "hero",
+        "purpose": "Large heading, text, buttons over background image for page intro"
+      },
+      {
+        "name": "cards",
+        "purpose": "Grid of items with images/text, each row = one card with 2 columns (image + content)"
+      },
+      {
+        "name": "columns",
+        "purpose": "Side-by-side content layout"
+      },
+      {
+        "name": "accordion",
+        "purpose": "Collapsible Q&A or expandable sections (2 columns: title + content)"
+      },
+      {
+        "name": "tabs",
+        "purpose": "Switchable content panels (2 columns: tab label + tab content)"
+      },
+      {
+        "name": "carousel",
+        "purpose": "Rotating image/content slides"
+      },
+      {
+        "name": "video",
+        "purpose": "Embedded video with optional poster image"
+      },
+      {
+        "name": "embed",
+        "purpose": "External content (YouTube, social media)"
+      },
+      {
+        "name": "quote",
+        "purpose": "Highlighted testimonials/quotes"
+      },
+      {
+        "name": "table",
+        "purpose": "Tabular data in rows and columns"
+      },
+      {
+        "name": "search",
+        "purpose": "Site search with query index"
+      }
+    ]
+  }
+}

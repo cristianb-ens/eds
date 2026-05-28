@@ -1,0 +1,40 @@
+{
+  "variantName": "accordion-industries",
+  "baseBlock": "accordion",
+  "version": "1.0.0",
+  "created": "2026-05-28T10:34:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://kaufmanrossin.com/",
+    "originPage": "homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "industries-showcase",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + expandable items (title + description + CTA + image)",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "industry or service showcase sections",
+      "expandable content with associated images",
+      "FAQ sections with visual content",
+      "category exploration sections"
+    ],
+    "notSuitableFor": [
+      "simple text-only FAQ sections",
+      "accordion without images",
+      "compact Q&A sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-05-28T10:34:00.000Z"
+  }
+}
