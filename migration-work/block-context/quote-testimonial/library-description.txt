@@ -1,1 +1,0 @@
-Centered testimonial quote with attribution. Row 1: quote text, Row 2: attribution text.

@@ -1,1 +1,0 @@
-Grid of cards with images, labels, and text content. Each row represents one card with 2 columns: image and body content.

@@ -1,1 +1,0 @@
-Grid of location items with circular images and location names. Each row has 2 columns: image and location name.
