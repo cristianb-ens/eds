@@ -11,32 +11,146 @@
  */
 
 :root {
-  /* colors */
-  --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  /* === BT Brand Colors === */
+  --bt-white: #fff;
+  --bt-black: #000b13;
+  --bt-blackest-black: #000;
+  --bt-blue: #0090ff;
+  --bt-star-purple: #46305b;
+  --bt-neo: #1b1464;
+  --bt-neo-100: #0090ff;
+  --bt-red: #ed1c24;
+  --bt-green: #3eb96f;
+  --bt-green-2: #a6ce00;
+  --bt-yellow: #ffc20e;
 
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
+  /* === Blue Palette === */
+  --blue-t05: #f0f7fb;
+  --blue-t07: #e1eef7;
+  --blue-t08: #00307a;
+  --blue-t1: #cde3f2;
+  --blue-t2: #9ac7e4;
+  --blue-t3: #68aad7;
+  --blue-t4: #fafcfe;
+  --blue-24: #0090ff;
 
-  /* body sizes */
-  --body-font-size-m: 22px;
-  --body-font-size-s: 19px;
-  --body-font-size-xs: 17px;
+  /* === Red Palette === */
+  --red-t1: #fde8e9;
+  --red-t2: #fabbbd;
+  --red-t3: #f8a4a7;
+  --red-t4: #f68e92;
+  --red-t5: #fabbbd;
 
-  /* heading sizes */
-  --heading-font-size-xxl: 55px;
-  --heading-font-size-xl: 44px;
-  --heading-font-size-l: 34px;
-  --heading-font-size-m: 27px;
-  --heading-font-size-s: 24px;
-  --heading-font-size-xs: 22px;
+  /* === Yellow Palette === */
+  --yellow-t1: #fff9e7;
+  --yellow-t2: #fff3cf;
 
-  /* nav heights */
+  /* === Gray Palette === */
+  --gray-90: #e5e5e5;
+  --gray-100: #fafafa;
+  --gray-150: #f0f0f0;
+  --gray-200: #e7e7e7;
+  --gray-250: #d4d4d4;
+  --gray-300: #bcbcbc;
+  --gray-350: #999;
+  --gray-400: #8a8b8c;
+  --gray-450: #67686a;
+  --gray-500: #434343;
+  --gray-550: #292929;
+  --gray-600: #1d1d1d;
+
+  /* === Semantic Colors === */
+  --background-color: #fff;
+  --light-color: #f4f4f5;
+  --dark-color: #000b13;
+  --text-color: #131315;
+  --text-color-muted: #737382;
+  --text-color-inverted: #fff;
+  --link-color: #1a76ff;
+  --link-hover-color: #0090ff;
+  --accent-color: #1a76ff;
+  --accent-color-hover: #0090ff;
+  --surface-color: #efeff1;
+  --surface-color-alt: #f4f4f5;
+  --border-color: #d4d4d4;
+  --highlight-color: #a0c6ff;
+
+  /* === Typography — Font Families === */
+  --body-font-family: "Inter Variable", inter-fallback, sans-serif;
+  --heading-font-family: "Milligram-Condensed", milligram-fallback, sans-serif;
+  --icon-font-family: "BT-Fontikon";
+
+  /* === Typography — Body Sizes (mobile-first) === */
+  --body-font-size-l: 16px;
+  --body-font-size-m: 14px;
+  --body-font-size-s: 12px;
+  --body-font-size-xs: 10px;
+
+  /* === Typography — Heading Sizes (mobile-first) === */
+  --heading-font-size-xxl: 45px;
+  --heading-font-size-xl: 36px;
+  --heading-font-size-l: 29px;
+  --heading-font-size-m: 24px;
+  --heading-font-size-s: 21px;
+  --heading-font-size-xs: 19px;
+
+  /* === Typography — Font Weights === */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* === Typography — Line Heights === */
+  --line-height-tight: 1.15;
+  --line-height-snug: 1.2;
+  --line-height-normal: 1.46;
+  --line-height-relaxed: 1.6;
+
+  /* === Typography — Letter Spacing === */
+  --letter-spacing-tight: -0.84px;
+  --letter-spacing-normal: -0.09px;
+  --letter-spacing-wide: 0.24px;
+
+  /* === Spacing Scale === */
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 12px;
+  --spacing-l: 16px;
+  --spacing-xl: 20px;
+  --spacing-2xl: 24px;
+  --spacing-3xl: 32px;
+  --spacing-4xl: 48px;
+  --spacing-5xl: 64px;
+
+  /* === Layout === */
+  --max-width-content: 1360px;
+  --max-width-wide: 1440px;
+  --max-width-narrow: 700px;
+  --section-padding-mobile: 0 16px;
+  --section-padding-desktop: 0 24px;
+
+  /* === Border Radius === */
+  --radius-s: 4px;
+  --radius-m: 8px;
+  --radius-l: 12px;
+  --radius-xl: 24px;
+  --radius-pill: 38px;
+  --radius-circle: 50%;
+
+  /* === Shadows === */
+  --shadow-sm: 0 4px 10px -4px rgba(0 0 0 / 6%);
+  --shadow-md: 4px 4px 12px -6px rgba(0 0 0 / 8%);
+  --shadow-lg: 0 8px 28px -6px rgba(0 0 0 / 12%), 0 18px 88px -4px rgba(24 39 75 / 14%);
+  --shadow-xl: 0 24px 42px -12px rgba(0 0 0 / 25%);
+
+  /* === Transitions === */
+  --transition-fast: 0.25s ease-in-out;
+  --transition-color: color 0.25s ease-in-out;
+  --transition-bg: background-color 0.25s ease-in-out;
+  --transition-all: background-color 0.25s ease-in-out, color 0.25s ease-in-out, fill 0.25s ease-in-out, border-color 0.25s ease-in-out;
+
+  /* === Nav Heights === */
   --nav-height: 64px;
   --breadcrumbs-height: 34px;
   --header-height: var(--nav-height);
@@ -44,31 +158,32 @@
 
 /* fallback fonts */
 @font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
+  font-family: inter-fallback;
+  size-adjust: 107%;
   src: local('Arial');
 }
 
 @font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  font-family: milligram-fallback;
+  size-adjust: 90%;
+  src: local('Arial Narrow');
 }
 
 @media (width >= 900px) {
   :root {
     /* body sizes */
-    --body-font-size-m: 18px;
-    --body-font-size-s: 16px;
-    --body-font-size-xs: 14px;
+    --body-font-size-l: 17px;
+    --body-font-size-m: 15px;
+    --body-font-size-s: 14px;
+    --body-font-size-xs: 12px;
 
     /* heading sizes */
-    --heading-font-size-xxl: 45px;
-    --heading-font-size-xl: 36px;
-    --heading-font-size-l: 28px;
-    --heading-font-size-m: 22px;
-    --heading-font-size-s: 20px;
-    --heading-font-size-xs: 18px;
+    --heading-font-size-xxl: 56px;
+    --heading-font-size-xl: 45px;
+    --heading-font-size-l: 36px;
+    --heading-font-size-m: 27px;
+    --heading-font-size-s: 22px;
+    --heading-font-size-xs: 19px;
   }
 }
 
@@ -79,7 +194,10 @@ body {
   color: var(--text-color);
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
-  line-height: 1.6;
+  line-height: var(--line-height-normal);
+  letter-spacing: var(--letter-spacing-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body.appear {
@@ -115,12 +233,17 @@ h6 {
   margin-top: 0.8em;
   margin-bottom: 0.25em;
   font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
   scroll-margin: 40px;
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+  font-weight: var(--font-weight-light);
+}
 h2 { font-size: var(--heading-font-size-xl); }
 h3 { font-size: var(--heading-font-size-l); }
 h4 { font-size: var(--heading-font-size-m); }
@@ -166,6 +289,7 @@ a:any-link {
   color: var(--link-color);
   text-decoration: none;
   word-break: break-word;
+  transition: var(--transition-color);
 }
 
 a:hover {
@@ -181,26 +305,28 @@ button {
   max-width: 100%;
   margin: 12px 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
+  border-radius: var(--radius-pill);
+  padding: 10px 16px;
   font-family: var(--body-font-family);
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--body-font-size-m);
+  line-height: 1.4;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
+  background-color: var(--accent-color);
+  color: var(--text-color-inverted);
   cursor: pointer;
   text-overflow: ellipsis;
   white-space: nowrap;
+  transition: var(--transition-all);
 }
 
 a.button:hover,
 a.button:focus,
 button:hover,
 button:focus {
-  background-color: var(--link-hover-color);
+  background-color: var(--accent-color-hover);
   cursor: pointer;
 }
 
@@ -236,13 +362,13 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: var(--spacing-3xl) 0;
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--max-width-content);
   margin: auto;
-  padding: 0 24px;
+  padding: var(--section-padding-mobile);
 }
 
 main > .section:first-of-type {
@@ -251,7 +377,7 @@ main > .section:first-of-type {
 
 @media (width >= 900px) {
   main > .section > div {
-    padding: 0 32px;
+    padding: var(--section-padding-desktop);
   }
 }
 
@@ -260,5 +386,5 @@ main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
-  padding: 40px 0;
+  padding: var(--spacing-4xl) 0;
 }

@@ -1,0 +1,60 @@
+.product-badges-wrapper {
+  --badge-accent: var(--accent-color);
+  --badge-text: var(--text-color);
+  --badge-value-size: var(--heading-font-size-l);
+  --badge-label-size: var(--body-font-size-s);
+  --badge-gap: var(--spacing-2xl);
+
+  padding: var(--spacing-3xl) 0 var(--spacing-5xl);
+}
+
+.product-badges-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--badge-gap);
+  max-width: var(--max-width-content);
+  margin: 0 auto;
+  padding: 0 var(--spacing-l);
+}
+
+.product-badges-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  flex: 1 1 140px;
+  min-width: 0;
+}
+
+.product-badges-value {
+  font-family: var(--heading-font-family);
+  font-size: var(--badge-value-size);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+  text-transform: uppercase;
+  color: var(--badge-accent);
+}
+
+.product-badges-label {
+  font-family: var(--body-font-family);
+  font-size: var(--badge-label-size);
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-normal);
+  color: var(--badge-text);
+}
+
+@media (width >= 900px) {
+  .product-badges-wrapper {
+    --badge-value-size: var(--heading-font-size-l);
+    --badge-label-size: 17px;
+  }
+
+  .product-badges-grid {
+    flex-wrap: nowrap;
+    padding: 0 var(--spacing-2xl);
+  }
+
+  .product-badges-item {
+    flex: 1 1 0;
+  }
+}
