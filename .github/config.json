@@ -1,1 +1,16 @@
-{"admin":{"role":{"admin":["cristianb@ensemble.com"],"publish":["cristianb@ensemble.com"]}}}
+{
+  "admin": {
+    "role": {
+      "admin": ["cristianb@ensemble.com", "*@ensemble.com"],
+      "publish": ["cristianb@ensemble.com", "*@ensemble.com"]
+    }
+  },
+  "access": {
+    "preview": {
+      "allow": ["*"]
+    },
+    "live": {
+      "allow": ["*"]
+    }
+  }
+}
