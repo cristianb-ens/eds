@@ -50,6 +50,11 @@ header .nav-brand a {
   align-items: center;
 }
 
+header .nav-brand img {
+  width: 49px;
+  height: 56px;
+}
+
 /* nav links */
 header .nav-links {
   display: none;
