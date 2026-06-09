@@ -399,3 +399,8 @@ main .section.active-variant.variant-medical {
   --accent-color: var(--bt-star-purple);
   --accent-color-hover: #5a3f73;
 }
+
+main .section.active-variant.variant-IT {
+  --accent-color: #0ea5e9;
+  --accent-color-hover: #0284c7;
+}
