@@ -1,0 +1,143 @@
+/* === Full-width dark section === */
+main > .section.conditions-split-container {
+  margin: 0;
+}
+
+main > .section > .conditions-split-wrapper {
+  max-width: none;
+  padding: 0;
+  background-color: #111;
+  border-top: 2px solid #1a76ff;
+}
+
+/* === Layout === */
+.conditions-split-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 80px 32px 120px;
+  align-items: flex-start;
+}
+
+@media (width >= 900px) {
+  .conditions-split-layout {
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+  }
+}
+
+/* === Content (left) === */
+.conditions-split-content {
+  flex: 0 0 506px;
+  max-width: 506px;
+}
+
+@media (width < 900px) {
+  .conditions-split-content {
+    flex: 1;
+    max-width: 100%;
+  }
+}
+
+/* === Title === */
+.conditions-split-title {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 40px;
+  letter-spacing: -2.2px;
+  line-height: 0.9;
+}
+
+@media (width >= 900px) {
+  .conditions-split-title {
+    font-size: 88px;
+    line-height: 0.9;
+  }
+}
+
+/* === Checklist === */
+.conditions-split-list {
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 64px;
+}
+
+.conditions-split-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.44;
+}
+
+.conditions-split-check {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  margin-top: 2px;
+}
+
+/* === Links row === */
+.conditions-split-links {
+  display: flex;
+  gap: 32px;
+  padding: 24px 0;
+  border-top: 1px solid rgba(255 255 255 / 15%);
+  border-bottom: 1px solid rgba(255 255 255 / 15%);
+  max-width: 100%;
+}
+
+.conditions-split-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.conditions-split-link:hover {
+  color: #1a76ff;
+  text-decoration: none;
+}
+
+.conditions-split-link svg {
+  flex-shrink: 0;
+}
+
+/* === Figure (right) === */
+.conditions-split-figure {
+  flex: 0 0 auto;
+  width: 690px;
+  height: 700px;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+@media (width < 900px) {
+  .conditions-split-figure {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+.conditions-split-figure img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}

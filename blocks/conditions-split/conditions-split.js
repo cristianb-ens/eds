@@ -13,15 +13,19 @@ export default function decorate(block) {
     const img = row.querySelector('img');
     const link = cols[0]?.querySelector('a');
 
+    const isImageUrl = (url) => /\.(jpg|jpeg|png|webp|svg|gif)/i.test(url)
+      || /unsplash\.com/i.test(url)
+      || /\/media\//i.test(url);
+
     if (img) {
       imageUrl = img.src;
-    } else if (text && /^https?:\/\/.+\.(jpg|jpeg|png|webp|svg|gif)/i.test(text)) {
+    } else if (text && /^https?:\/\//.test(text) && isImageUrl(text)) {
       imageUrl = text;
-    } else if (link && !link.textContent.trim().match(/^https?:\/\//)) {
-      links.push({ text: link.textContent.trim(), href: link.href });
-    } else if (link && link.textContent.trim().match(/^https?:\/\//)) {
+    } else if (link && /^https?:\/\//.test(link.textContent.trim()) && isImageUrl(link.href)) {
       imageUrl = link.href;
-    } else if (text && !text.match(/^https?:\/\//)) {
+    } else if (link && !/^https?:\/\//.test(link.textContent.trim())) {
+      links.push({ text: link.textContent.trim(), href: link.href });
+    } else if (text && !/^https?:\/\//.test(text)) {
       items.push(text);
     }
   });
