@@ -205,7 +205,7 @@ body.appear {
 }
 
 header {
-  height: var(--header-height);
+  height: 0;
 }
 
 header .header,
@@ -387,4 +387,15 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: var(--spacing-4xl) 0;
+}
+
+/* variant routing — active variant gets theme overrides */
+main .section.active-variant.variant-student {
+  --accent-color: var(--bt-green);
+  --accent-color-hover: #2fa05e;
+}
+
+main .section.active-variant.variant-medical {
+  --accent-color: var(--bt-star-purple);
+  --accent-color-hover: #5a3f73;
 }

@@ -1,0 +1,91 @@
+/* === Full-width section === */
+main > .section.parallax-hero-container {
+  margin: 0;
+}
+
+main > .section > .parallax-hero-wrapper {
+  max-width: none;
+  padding: 0;
+}
+
+/* === Parallax section === */
+.parallax-hero {
+  position: relative;
+  height: 900px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #111;
+}
+
+/* Dark overlay for text readability */
+.parallax-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0 0 0 / 40%);
+  z-index: 1;
+}
+
+/* === Content (centered overlay) === */
+.parallax-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 100px 32px;
+  max-width: 700px;
+}
+
+/* === Subtitle === */
+.parallax-hero-subtitle {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -0.09px;
+  margin-bottom: 12px;
+}
+
+/* === Title === */
+.parallax-hero-title {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -1.88px;
+  line-height: 0.9;
+  margin: 0 0 40px;
+}
+
+@media (width >= 900px) {
+  .parallax-hero-title {
+    font-size: 94px;
+  }
+}
+
+/* === CTA === */
+.parallax-hero .parallax-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 120px;
+  background-color: #1a76ff;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.parallax-hero .parallax-hero-cta:hover {
+  background-color: #0090ff;
+  text-decoration: none;
+}

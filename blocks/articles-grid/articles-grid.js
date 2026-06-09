@@ -19,7 +19,6 @@ export default function decorate(block) {
     const date = cols[0]?.textContent.trim();
     const title = cols[1]?.textContent.trim();
     const link = row.querySelector('a');
-    const imageUrl = cols[2]?.textContent.trim() || '';
 
     if (!date || !title) return;
 
@@ -28,18 +27,16 @@ export default function decorate(block) {
     card.href = link?.href || '/';
 
     const fallbackImages = [
-      'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80',
-      'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&q=80',
-      'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=600&q=80',
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80',
+      'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&q=80',
+      'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80',
+      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80',
+      'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600&q=80',
     ];
-    const imgSrc = imageUrl && !imageUrl.includes('bancatransilvania.ro')
-      ? imageUrl
-      : fallbackImages[grid.children.length % fallbackImages.length];
     const img = document.createElement('img');
-    img.src = imgSrc;
+    img.src = fallbackImages[grid.children.length % fallbackImages.length];
     img.alt = title;
     img.loading = 'lazy';
+    img.onerror = () => { [img.src] = fallbackImages; };
     card.append(img);
 
     const dateEl = document.createElement('span');

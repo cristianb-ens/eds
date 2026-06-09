@@ -1,0 +1,20 @@
+:root {
+  --heading-font-family: "Raleway", sans-serif;
+  --body-font-family: "Hind", sans-serif;
+  --background-color: #fff;
+  --text-color: #212529;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
+  --light-color: #f5f5f5;
+  --dark-color: #003b6a;
+  --grey-color: #f5f5f5;
+  --section-padding: 80px;
+  --content-max-width: 1200px;
+  --nav-height: 132px;
+  --heading-size-xxl: 36px;
+  --heading-size-xl: 40px;
+  --heading-size-l: 24px;
+  --heading-size-m: 20px;
+  --heading-size-s: 18px;
+  --heading-size-xs: 16px;
+}

@@ -1,0 +1,143 @@
+/* === Full-width dark section === */
+main > .section.btpay-section-container {
+  margin: 0;
+}
+
+main > .section > .btpay-section-wrapper {
+  max-width: none;
+  padding: 0;
+  background-color: #111;
+}
+
+/* === Layout: figure left + content right === */
+.btpay-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  align-items: center;
+}
+
+@media (width >= 900px) {
+  .btpay-layout {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+/* === Figure (left — phone mockup) === */
+.btpay-figure {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btpay-figure img {
+  width: auto;
+  height: 500px;
+  max-width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+@media (width < 900px) {
+  .btpay-figure img {
+    height: 350px;
+  }
+}
+
+/* === Content (right) === */
+.btpay-content {
+  flex: 1;
+  max-width: 626px;
+}
+
+/* === Supertitle === */
+.btpay-supertitle {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -0.09px;
+  margin-bottom: 12px;
+}
+
+/* === Title === */
+.btpay-title {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -2.2px;
+  line-height: 0.9;
+  margin: 0 0 24px;
+}
+
+@media (width >= 900px) {
+  .btpay-title {
+    font-size: 88px;
+    line-height: 0.9;
+  }
+}
+
+/* === Description === */
+.btpay-desc {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.44;
+  margin: 0 0 32px;
+}
+
+/* === Steps list === */
+.btpay-steps {
+  display: grid;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 56px;
+}
+
+.btpay-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1.44;
+}
+
+.btpay-check {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* === CTA === */
+.btpay-section .btpay-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 120px;
+  background-color: #1a76ff;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.btpay-section .btpay-cta:hover {
+  background-color: #0090ff;
+  text-decoration: none;
+}

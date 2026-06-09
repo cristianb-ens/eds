@@ -1,45 +1,49 @@
+/* === Theme Tokens === */
 .onboarding-steps-wrapper {
-  --steps-accent: var(--accent-color);
-  --steps-text: var(--text-color);
-  --steps-indicator-size: 24px;
-  --steps-gap: var(--spacing-l);
-  --steps-font-size: var(--body-font-size-l);
+  --steps-accent: #1a76ff;
+  --steps-text: #111;
 
-  padding: var(--spacing-3xl) 0;
+  padding: 32px 0;
 }
 
+.onboarding-steps-wrapper.student { --steps-accent: var(--bt-green); }
+.onboarding-steps-wrapper.medical { --steps-accent: var(--bt-star-purple); }
+
+/* === List === */
 .onboarding-steps .onboarding-steps-list {
   display: grid;
-  gap: var(--steps-gap);
+  gap: 16px;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 0 32px;
+  padding: 0 16px;
   counter-reset: step-counter;
   max-width: var(--max-width-content);
   margin-inline: auto;
-  padding-inline: var(--spacing-l);
 }
 
+/* === Item === */
 .onboarding-steps-item {
   display: flex;
   align-items: flex-start;
-  gap: var(--steps-gap);
+  gap: 16px;
   counter-increment: step-counter;
+  min-width: 0;
 }
 
+/* === Indicator circle === */
 .onboarding-steps-indicator {
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: var(--steps-indicator-size);
-  height: var(--steps-indicator-size);
-  border-radius: var(--radius-circle);
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
   background-color: var(--steps-accent);
-  color: var(--bt-white);
+  color: #fff;
   font-family: var(--body-font-family);
-  font-size: var(--body-font-size-s);
-  font-weight: var(--font-weight-bold);
+  font-size: 11px;
+  font-weight: 700;
   line-height: 1;
 }
 
@@ -47,21 +51,20 @@
   content: counter(step-counter);
 }
 
+/* === Step text === */
 .onboarding-steps-text {
   font-family: var(--body-font-family);
-  font-size: var(--steps-font-size);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.44;
   color: var(--steps-text);
   padding-top: 2px;
+  min-width: 0;
 }
 
+/* === Desktop === */
 @media (width >= 900px) {
-  .onboarding-steps-wrapper {
-    --steps-font-size: 17px;
-  }
-
   .onboarding-steps .onboarding-steps-list {
-    padding-inline: var(--spacing-2xl);
+    padding: 0 24px;
   }
 }

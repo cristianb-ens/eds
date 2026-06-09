@@ -1,3 +1,8 @@
+function highlightValue(text) {
+  const pattern = /(\d[\d.,]*\s*(%|lei|ani|luni|euro))|(\bbanii\b)/gi;
+  return text.replace(pattern, '<span class="product-badges-accent">$&</span>');
+}
+
 export default function decorate(block) {
   const rows = [...block.querySelectorAll(':scope > div')];
   block.textContent = '';
@@ -9,22 +14,24 @@ export default function decorate(block) {
     const cols = [...row.querySelectorAll(':scope > div')];
     if (cols.length < 2) return;
 
-    const value = cols[0]?.textContent.trim();
-    const label = cols[1]?.textContent.trim();
-    if (!value) return;
+    const heading = cols[0]?.textContent.trim();
+    const description = cols[1]?.innerHTML.trim();
+    if (!heading) return;
 
     const card = document.createElement('div');
     card.className = 'product-badges-item';
 
-    const valueEl = document.createElement('span');
-    valueEl.className = 'product-badges-value';
-    valueEl.textContent = value;
-    card.append(valueEl);
+    const headingEl = document.createElement('h3');
+    headingEl.className = 'product-badges-heading';
+    headingEl.innerHTML = highlightValue(heading);
+    card.append(headingEl);
 
-    const labelEl = document.createElement('span');
-    labelEl.className = 'product-badges-label';
-    labelEl.textContent = label;
-    card.append(labelEl);
+    if (description) {
+      const descEl = document.createElement('div');
+      descEl.className = 'product-badges-desc';
+      descEl.innerHTML = description;
+      card.append(descEl);
+    }
 
     grid.append(card);
   });

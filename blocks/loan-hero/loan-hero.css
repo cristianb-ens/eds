@@ -1,158 +1,165 @@
-.loan-hero-wrapper {
-  --loan-hero-accent: var(--accent-color);
-  --loan-hero-accent-hover: var(--accent-color-hover);
-  --loan-hero-bg: var(--bt-neo);
-  --loan-hero-text: var(--bt-white);
-  --loan-hero-min-height: 420px;
+/* === Full-width section override === */
+main > .section.loan-hero-container {
+  margin: 0;
+}
 
+/* === Theme Tokens === */
+main > .section > .loan-hero-wrapper {
+  --loan-hero-accent: #1a76ff;
+  --loan-hero-accent-hover: #0090ff;
+  --loan-hero-bg: var(--bt-neo);
+  --loan-hero-text: #fff;
+  --loan-hero-cta-primary-bg: var(--loan-hero-accent);
+  --loan-hero-cta-primary-text: #fff;
+  --loan-hero-cta-primary-border: var(--loan-hero-accent);
+  --loan-hero-cta-secondary-bg: #fff;
+  --loan-hero-cta-secondary-text: var(--loan-hero-accent);
+  --loan-hero-cta-secondary-border: #dfdfdf;
+
+  max-width: none;
+  padding: 0;
   background-color: var(--loan-hero-bg);
+  background-image: url('https://www.bancatransilvania.ro/assets/themes/bancatransilvania/partials/pages/credit/nevoi-personale/images/header.mix.1feea390c38edcacf44a283034589dcb.webp');
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
 }
 
-.loan-hero-wrapper .loan-hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: var(--loan-hero-min-height);
-  padding: var(--spacing-5xl) var(--spacing-l) var(--spacing-5xl);
-  max-width: var(--max-width-wide);
-  margin: 0 auto;
-  color: var(--loan-hero-text);
-}
-
-.loan-hero-badge {
-  display: inline-block;
-  font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-m);
-  font-weight: var(--font-weight-light);
-  line-height: var(--line-height-snug);
-  letter-spacing: var(--letter-spacing-tight);
-  text-transform: uppercase;
-  margin-bottom: var(--spacing-s);
-  color: var(--loan-hero-text);
-}
-
-.loan-hero h1 {
-  font-family: var(--heading-font-family);
-  font-size: var(--heading-font-size-xxl);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-tight);
-  letter-spacing: var(--letter-spacing-tight);
-  text-transform: uppercase;
-  margin: 0 0 var(--spacing-m);
-  color: var(--loan-hero-text);
-  max-width: 500px;
-}
-
-.loan-hero-description {
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-l);
-  font-weight: var(--font-weight-medium);
-  line-height: var(--line-height-normal);
-  color: var(--loan-hero-text);
-  margin: 0 0 var(--spacing-3xl);
-  max-width: 500px;
-}
-
-.loan-hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--spacing-s);
-  align-items: center;
-}
-
-.loan-hero-cta-primary,
-.loan-hero-cta-secondary {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-s);
-  padding: 14px 18px;
-  border-radius: var(--radius-pill);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-s);
-  font-weight: var(--font-weight-medium);
-  line-height: 1;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: var(--transition-all);
-}
-
-.loan-hero-cta-primary {
-  background-color: var(--loan-hero-accent);
-  color: var(--loan-hero-text);
-  border: 1px solid var(--loan-hero-accent);
-}
-
-.loan-hero-cta-primary:hover {
-  background-color: var(--loan-hero-accent-hover);
-  border-color: var(--loan-hero-accent-hover);
-  color: var(--loan-hero-text);
-  text-decoration: none;
-}
-
-.loan-hero-cta-secondary {
-  background-color: var(--bt-white);
-  color: var(--loan-hero-accent);
-  border: 1px solid var(--border-color);
-}
-
-.loan-hero-cta-secondary:hover {
-  background-color: var(--light-color);
-  color: var(--loan-hero-accent-hover);
-  text-decoration: none;
-}
-
-/* Variant: student — green accent */
 .loan-hero-wrapper.student {
   --loan-hero-accent: var(--bt-green);
   --loan-hero-accent-hover: #2fa05e;
   --loan-hero-bg: #0d3b23;
 }
 
-/* Variant: medical — purple accent */
 .loan-hero-wrapper.medical {
   --loan-hero-accent: var(--bt-star-purple);
   --loan-hero-accent-hover: #5a3f73;
   --loan-hero-bg: #2d1f3d;
 }
 
-/* Variant: auto — dark blue accent */
 .loan-hero-wrapper.auto {
   --loan-hero-accent: var(--blue-t08);
   --loan-hero-accent-hover: #001f4d;
   --loan-hero-bg: #001230;
 }
 
-/* Variant: renovation — yellow accent */
 .loan-hero-wrapper.renovation {
   --loan-hero-accent: var(--bt-yellow);
   --loan-hero-accent-hover: #e6af00;
   --loan-hero-bg: #3d2e00;
+  --loan-hero-cta-primary-text: var(--bt-black);
 }
 
-.loan-hero-wrapper.renovation .loan-hero-cta-primary {
-  color: var(--bt-black);
+/* === Layout === */
+.loan-hero-wrapper .loan-hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 480px;
+  padding: 64px 16px 80px;
+  max-width: 1408px;
+  margin: 0 auto;
+  color: var(--loan-hero-text);
 }
 
-/* Responsive: desktop */
+
+/* === Badge (h1 on source — light weight supertitle) === */
+.loan-hero-badge {
+  display: block;
+  font-family: var(--heading-font-family);
+  font-size: 27px;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: -0.89px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+  color: var(--loan-hero-text);
+}
+
+/* === Title (h2 on source — bold display) === */
+.loan-hero h1 {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 0.85;
+  letter-spacing: -0.84px;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  color: var(--loan-hero-text);
+  max-width: 500px;
+}
+
+/* === Description === */
+.loan-hero-description {
+  font-family: var(--body-font-family);
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.44;
+  color: var(--loan-hero-text);
+  margin: 0 0 32px;
+  max-width: 500px;
+}
+
+/* === Actions row === */
+.loan-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+/* === CTA shared === */
+.loan-hero .loan-hero-cta-primary,
+.loan-hero .loan-hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 18px;
+  border-radius: 120px;
+  font-family: var(--body-font-family);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.01px;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out, border-color 0.25s ease-in-out;
+}
+
+/* === Primary CTA === */
+.loan-hero .loan-hero-cta-primary {
+  background-color: var(--loan-hero-cta-primary-bg);
+  color: var(--loan-hero-cta-primary-text);
+  border: 1px solid var(--loan-hero-cta-primary-border);
+}
+
+.loan-hero .loan-hero-cta-primary:hover {
+  background-color: var(--loan-hero-accent-hover);
+  border-color: var(--loan-hero-accent-hover);
+  color: var(--loan-hero-cta-primary-text);
+  text-decoration: none;
+}
+
+/* === Secondary CTA === */
+.loan-hero .loan-hero-cta-secondary {
+  background-color: #fff;
+  color: var(--loan-hero-accent);
+  border: 1px solid #dfdfdf;
+}
+
+.loan-hero .loan-hero-cta-secondary:hover {
+  background-color: var(--light-color);
+  color: var(--loan-hero-accent-hover);
+  text-decoration: none;
+}
+
+/* === Desktop === */
 @media (width >= 900px) {
   .loan-hero-wrapper .loan-hero {
-    padding: var(--spacing-5xl) var(--spacing-2xl) 80px;
+    padding: 64px 24px 80px;
     min-height: 480px;
-  }
-
-  .loan-hero-badge {
-    font-size: var(--heading-font-size-m);
-  }
-
-  .loan-hero h1 {
-    font-size: var(--heading-font-size-xxl);
-  }
-
-  .loan-hero-description {
-    font-size: 17px;
   }
 }

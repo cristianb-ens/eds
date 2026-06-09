@@ -1,19 +1,28 @@
+/* === Theme Tokens === */
 .adaptive-accordion-wrapper {
-  --accordion-border: 1px solid var(--border-color);
-  --accordion-title-size: var(--body-font-size-l);
-  --accordion-content-size: var(--body-font-size-m);
-  --accordion-padding-block: var(--spacing-l);
+  --accordion-accent: #1a76ff;
+  --accordion-border: 1px solid #dfdfdf;
+  --accordion-title-size: 17px;
+  --accordion-content-size: 14px;
+  --accordion-padding-block: 16px;
   --accordion-icon-size: 12px;
+  --accordion-text-color: #111;
+  --accordion-bg: #efeff1;
 
-  padding: var(--spacing-3xl) 0;
+  padding: 8px 0 48px;
 }
 
+.adaptive-accordion-wrapper.student { --accordion-accent: var(--bt-green); }
+.adaptive-accordion-wrapper.medical { --accordion-accent: var(--bt-star-purple); }
+
+/* === Container === */
 .adaptive-accordion {
   max-width: var(--max-width-content);
   margin: 0 auto;
-  padding: 0 var(--spacing-l);
+  padding: 0 16px;
 }
 
+/* === Item === */
 .adaptive-accordion-item {
   border-bottom: var(--accordion-border);
 }
@@ -22,11 +31,12 @@
   border-top: var(--accordion-border);
 }
 
+/* === Trigger === */
 .adaptive-accordion-trigger {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: var(--spacing-l);
+  gap: 16px;
   width: 100%;
   padding: var(--accordion-padding-block) 0;
   margin: 0;
@@ -35,27 +45,30 @@
   background: none;
   cursor: pointer;
   text-align: left;
-  color: var(--text-color);
-  transition: var(--transition-color);
+  color: var(--accordion-text-color);
+  transition: color 0.25s ease-in-out;
 }
 
 .adaptive-accordion-trigger:hover {
-  color: var(--accent-color);
+  color: var(--accordion-accent);
 }
 
+/* === Title === */
 .adaptive-accordion-title {
   font-family: var(--body-font-family);
   font-size: var(--accordion-title-size);
-  font-weight: var(--font-weight-semibold);
-  line-height: var(--line-height-normal);
+  font-weight: 600;
+  line-height: 1.44;
+  min-width: 0;
 }
 
+/* === Plus/Minus Icon === */
 .adaptive-accordion-icon {
   flex-shrink: 0;
   width: var(--accordion-icon-size);
   height: var(--accordion-icon-size);
   position: relative;
-  transition: transform var(--transition-fast);
+  transition: transform 0.25s ease-in-out;
 }
 
 .adaptive-accordion-icon::before,
@@ -80,17 +93,18 @@
   width: 2px;
   height: 100%;
   transform: translateX(-50%);
-  transition: transform var(--transition-fast);
+  transition: transform 0.25s ease-in-out;
 }
 
 .adaptive-accordion-trigger[aria-expanded="true"] .adaptive-accordion-icon::after {
   transform: translateX(-50%) scaleY(0);
 }
 
+/* === Panel === */
 .adaptive-accordion-panel {
   display: grid;
   grid-template-rows: 0fr;
-  transition: grid-template-rows var(--transition-fast);
+  transition: grid-template-rows 0.25s ease-in-out;
 }
 
 .adaptive-accordion-panel:not([hidden]) {
@@ -103,19 +117,21 @@
 
 .adaptive-accordion-panel-content {
   overflow: hidden;
+  min-width: 0;
 }
 
 .adaptive-accordion-panel:not([hidden]) .adaptive-accordion-panel-content {
   padding-bottom: var(--accordion-padding-block);
 }
 
+/* === Panel text === */
 .adaptive-accordion-panel-content p {
   font-family: var(--body-font-family);
   font-size: var(--accordion-content-size);
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-relaxed);
-  color: var(--text-color);
-  margin: 0 0 var(--spacing-m);
+  font-weight: 400;
+  line-height: 1.46;
+  color: var(--accordion-text-color);
+  margin: 0 0 12px;
 }
 
 .adaptive-accordion-panel-content p:last-child {
@@ -126,24 +142,24 @@
 .adaptive-accordion-panel-content ol {
   font-family: var(--body-font-family);
   font-size: var(--accordion-content-size);
-  line-height: var(--line-height-relaxed);
-  color: var(--text-color);
-  margin: 0 0 var(--spacing-m);
-  padding-left: var(--spacing-2xl);
+  line-height: 1.46;
+  color: var(--accordion-text-color);
+  margin: 0 0 12px;
+  padding-left: 24px;
 }
 
 .adaptive-accordion-panel-content li {
-  margin-bottom: var(--spacing-s);
+  margin-bottom: 8px;
 }
 
+/* === Desktop === */
 @media (width >= 900px) {
   .adaptive-accordion-wrapper {
-    --accordion-title-size: 17px;
+    --accordion-padding-block: 20px;
     --accordion-content-size: 15px;
-    --accordion-padding-block: var(--spacing-xl);
   }
 
   .adaptive-accordion {
-    padding: 0 var(--spacing-2xl);
+    padding: 0 24px;
   }
 }

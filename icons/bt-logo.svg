@@ -1,0 +1,30 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Banca Transilvania</title><style>
+body{margin:0;font-family:Arial;background:#fff;color:#000;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+.l{display:flex;align-items:center;gap:6px;margin-bottom:8px}
+.l img{width:44px}
+h1{font-size:18px;margin:0 0 6px}
+p{margin:4px 0;font-size:13px}
+.d{margin-top:6px;padding:6px 0;border-top:1px solid #ccc;border-bottom:1px solid #ccc;font-size:12px;line-height:1.3}
+code{font-family:monospace}
+</style></head><body><div>
+
+<div class="l">
+<img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMzcgNDIiIHhtbDpzcGFjZT0icHJlc2VydmUiPgogIDxwYXRoIGZpbGw9IiNGRkYwQkQiIGQ9Ik0xOC40LDQxLjZjLTItMC44LTMuOS0xLjgtNS42LTMuMWMtMS44LTEuMy0zLjYtMi44LTUuMS00LjVDNC41LDMwLjYsMiwyNi42LDAuNCwyMi4zYzItNi45LDIuMS0xMi40LDAuMi0xOC41YzIuNy0xLjEsNS41LTEuOSw4LjMtMi41QzE1LjIsMCwyMS42LDAsMjcuOCwxLjNjMi45LDAuNiw1LjYsMS40LDguMywyLjVjLTEuOCw2LTEuOCwxMS42LDAuMiwxOC41Yy0xLjcsNC40LTQuMSw4LjMtNy4zLDExLjhjLTEuNSwxLjctMy4yLDMuMi01LjEsNC41QzIyLjIsMzkuOCwyMC4zLDQwLjgsMTguNCw0MS42eiI+PC9wYXRoPgogIDxwYXRoIGZpbGw9IiNFRDFDMjQiIGQ9Ik0yNCwzOC45YzUuOC00LjIsMTAuMi0xMCwxMi43LTE2LjdjLTEuNy01LjctMi0xMC40LTEtMTUuNGwtMC4yLTAuNmwtMy44LTEuM2wtMC40LDAuM2MtMC45LDUuMS0wLjYsMTAuNCwwLjgsMTUuM2MtMy43LDguNC0xMCwxMy42LTE0LjUsMTUuNXYwLjdsNS4zLDIuM0wyNCwzOC45eiI+PC9wYXRoPgogIDxwYXRoIGZpbGw9IiMwMDcyQkMiIGQ9Ik0xOC40LDBDMTIuNywwLDcuMSwxLDEuOCwyLjlMMS42LDMuM2MxLDIuNywxLjYsNS41LDEuOCw4LjNjMC4yLDMuMy0wLjIsNi42LTEsOS43djAuMXYwLjFjMC41LDEsMSwyLDEuNiwzYzAuNiwwLjksMS4yLDEuOSwxLjksMi43YzAuNywwLjksMS41LDEuNywyLjMsMi41YzAuOCwwLjgsMS42LDEuNiwyLjUsMi4zYzAuOSwwLjcsMS45LDEuNCwyLjksMi4xYzEsMC43LDIuMSwxLjMsMy4yLDEuOWwwLjYsMC4zaDAuM3YtMC4yYzAuMi0wLjEsMC41LTAuMiwwLjctMC4zQzE0LDMzLjYsOC4xLDI4LjYsNC43LDIwLjZjMS40LTUsMS43LTEwLjIsMC44LTE1LjNDOS43LDQsMTQsMy40LDE4LjQsMy40YzYsMCwxMS45LDEuMiwxNy4zLDMuNWMwLjItMS4xLDAuNS0yLjIsMC44LTMuM0MzMC44LDEuMiwyNC42LDAsMTguNCwweiI+PC9wYXRoPgogIDxwYXRoIGZpbGw9IiNGRkMyMEUiIGQ9Ik0yNCwzOC45QzEzLjgsMzUuMiw2LjUsMjkuNCwyLjcsMjEuM0M0LjYsMTMuOCwzLjgsOSwxLjgsMi45QzEuMywzLjEsMC43LDMuMywwLjIsMy42QzIuMSw5LjcsMiwxNS4zLDAsMjIuMkMzMy4xLDMxLjEsMTAuNCwzOC44LDE4LjQsNDJDMjAuNCw0MS4yLDIyLjIsNDAuMiwyNCwzOC45Ij48L3BhdGg+CiAgPHBhdGggZD0iTTE1LjIsMTYuM0wxNS4yLDE2LjNjMS41LTAuMywyLjYtMC45LDIuNi0yLjdjMC0yLjItMS43LTMuMi0zLjktMy4ySDguMXYxLjJjMC44LDAsMS4xLDAuMiwxLjEsMS4ydjguNmMwLDAuMiwwLjEsMC4zLDAuMiwwLjVjMC4xLDAuMSwwLjMsMC4yLDAuNSwwLjJoNC41YzIuOSwwLDMuOS0xLjEsMy45LTNDMTguMiwxNy41LDE3LjMsMTYuNSwxNS4yLDE2LjNMMTUuMiwxNi4zeiBNMTIuMiwxMS44aDAuN2MxLjIsMCwxLjcsMC41LDEuNywxLjljMCwxLjYtMC40LDEuOS0xLjYsMS45aC0wLjdW MTEuOHogTTEzLjIsMjAuOWgtMXYtNGgxLjFjMS4yLDAsMS43LDAuNiwxLjcsMkMxNSwyMC41LDE0LjQsMjAuOSwxMy4yLDIwLjl6IE0yOC43LDExLjFsMC4yLDIuN2gtMS41Yy0wLjQtMS40LTAuNS0yLTEuNi0yaC0wLjV2MTAuM2gtMy4xVjExLjhoLTAuNWMtMS4xLDAtMS4yLDAuNS0xLjYsMmgtMS41bDAuMi0yLjdjMC0wLjIsMC4xLTAuMywwLjItMC40YzAuMS0wLjEsMC4zLTAuMiwwLjUtMC4ySDI4YzAuMiwwLDAuMywwLjEsMC41LDAuMkMyOC42LDEwLjgsMjguNywxMC45LDI4LjcsMTEuMSI+PC9wYXRoPgo8L3N2Zz4=">
+</div>
+
+<h1>Acces blocat / Access denied</h1>
+
+<p>Pentru asistență, vă rugăm să contactați reprezentantul dumneavoastră BT și să includeți următoarele informații.</p>
+
+<p>For assistance, please contact your BT representative and include the following information.</p>
+
+<div class="d">
+<div><b>Reference ID:</b> <code>0.b4c83017.1780958644.9fe8ba6f</code></div>
+<div><b>Client IP:</b> <code>3.224.194.242</code></div>
+<div><b>Date:</b> <code id="dt"></code></div>
+</div>
+
+</div><script>
+var d=new Date(),p=n=>n<10?"0"+n:n;
+document.getElementById("dt").textContent=p(d.getDate())+"/"+p(d.getMonth()+1)+"/"+d.getFullYear()+" "+p(d.getHours())+":"+p(d.getMinutes());
+</script></body></html>

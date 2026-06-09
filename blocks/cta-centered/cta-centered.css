@@ -1,0 +1,66 @@
+/* === Full-width dark section === */
+main > .section.cta-centered-container {
+  margin: 0;
+}
+
+main > .section > .cta-centered-wrapper {
+  max-width: none;
+  padding: 0;
+  background-color: #111;
+}
+
+/* === Inner wrapper === */
+.cta-centered-inner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 32px;
+  text-align: center;
+}
+
+/* === Title === */
+.cta-centered-title {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -1.88px;
+  line-height: 0.9;
+  margin: 0 0 24px;
+}
+
+@media (width >= 900px) {
+  .cta-centered-title {
+    font-size: 94px;
+  }
+}
+
+/* === Description === */
+.cta-centered-text {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255 255 255 / 70%);
+  line-height: 1.44;
+  margin: 0 0 48px;
+}
+
+/* === CTA button === */
+.cta-centered .cta-centered-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 120px;
+  background-color: #1a76ff;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.cta-centered .cta-centered-btn:hover {
+  background-color: #0090ff;
+  text-decoration: none;
+}

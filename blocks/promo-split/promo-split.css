@@ -1,0 +1,126 @@
+/* === Full-width dark section === */
+main > .section.promo-split-container {
+  margin: 0;
+}
+
+main > .section > .promo-split-wrapper {
+  max-width: none;
+  padding: 0;
+  background-color: #111;
+}
+
+/* === Layout === */
+.promo-split-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 80px 32px;
+  align-items: center;
+}
+
+@media (width >= 900px) {
+  .promo-split-layout {
+    flex-direction: row;
+    gap: 84px;
+    padding: 140px 32px;
+    align-items: center;
+  }
+}
+
+/* === Content (left) === */
+.promo-split-content {
+  flex: 1;
+}
+
+.promo-split-title {
+  font-family: var(--heading-font-family);
+  font-size: 56px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 24px;
+  letter-spacing: -1.88px;
+  line-height: 0.9;
+}
+
+@media (width >= 900px) {
+  .promo-split-title {
+    font-size: 94px;
+  }
+}
+
+.promo-split-text {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(255 255 255 / 80%);
+  line-height: 1.44;
+  margin: 0 0 40px;
+}
+
+.promo-split .promo-split-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 20px 30px;
+  border-radius: 120px;
+  background-color: #1a76ff;
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.promo-split .promo-split-cta:hover {
+  background-color: #0090ff;
+  text-decoration: none;
+}
+
+/* === Figure (right) === */
+.promo-split-figure {
+  flex: 1;
+  max-width: 646px;
+}
+
+.promo-split-figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 16px;
+}
+
+/* === Reversed variant (figure left, content right) === */
+@media (width >= 900px) {
+  .promo-split-wrapper.reversed .promo-split-layout {
+    flex-direction: row-reverse;
+    gap: 120px;
+    padding: 100px 32px;
+  }
+}
+
+.promo-split-wrapper.reversed .promo-split-figure {
+  max-width: 690px;
+}
+
+.promo-split-wrapper.reversed .promo-split-figure img {
+  height: 700px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+/* === Outline CTA variant === */
+.promo-split .promo-split-cta.outline,
+.promo-split-wrapper.reversed .promo-split-cta {
+  background-color: transparent;
+  color: #1a76ff;
+  border: 1px solid #dfdfdf;
+}
+
+.promo-split .promo-split-cta.outline:hover,
+.promo-split-wrapper.reversed .promo-split-cta:hover {
+  background-color: transparent;
+  border-color: #1a76ff;
+}

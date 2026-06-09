@@ -1,0 +1,111 @@
+/* === Full-width dark section === */
+main > .section.banking360-container {
+  margin: 0;
+}
+
+main > .section > .banking360-wrapper {
+  max-width: none;
+  padding: 0;
+  background-color: #111;
+}
+
+.banking360-inner {
+  max-width: 1376px;
+  margin: 0 auto;
+  padding: 80px 32px 100px;
+}
+
+/* === Heading === */
+.banking360-heading {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.banking360-title {
+  font-family: var(--heading-font-family);
+  font-size: 64px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: -2.725px;
+  line-height: 0.9;
+  margin: 0 0 12px;
+}
+
+@media (width >= 900px) {
+  .banking360-title {
+    font-size: 109px;
+  }
+}
+
+.banking360-accent {
+  color: #1a76ff;
+}
+
+.banking360-subtitle {
+  font-family: var(--body-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  margin: 0;
+  line-height: 1.44;
+}
+
+/* === Card grid === */
+.banking360-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (width >= 900px) {
+  .banking360-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* === Card === */
+.banking360-card {
+  background-color: #efeff1;
+  border-radius: 34px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (width >= 900px) {
+  .banking360-card {
+    padding: 56px;
+  }
+}
+
+/* === Card graphic (SVG) === */
+.banking360-graphic {
+  margin-bottom: 24px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.banking360-graphic svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* === Card title === */
+.banking360-card-title {
+  font-family: var(--body-font-family);
+  font-size: 14px;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 8px;
+}
+
+/* === Card text === */
+.banking360-card-text {
+  font-family: var(--body-font-family);
+  font-size: 17px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.44;
+}
